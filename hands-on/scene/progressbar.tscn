@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cwgykjd1y6a1n"]
+
+[ext_resource type="Script" uid="uid://cplr31am5jes" path="res://script/progress_bar.gd" id="1_ihm48"]
+[ext_resource type="Texture2D" uid="uid://brfm1cp7qtsek" path="res://assets/environment/hands-on.png" id="1_ii1wx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kfk2"]
+bg_color = Color(2.0696223e-06, 0.7217197, 0.29935798, 1)
+
+[node name="Control" type="Control" unique_id=1075351185]
+layout_mode = 3
+anchor_right = 1.0300001
+anchor_bottom = 1.052
+offset_left = -18.0
+offset_top = -9.0
+offset_right = -40.56006
+offset_bottom = -36.696045
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ihm48")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1010313148]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -578.0
+offset_top = -648.0
+offset_right = 583.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_ii1wx")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1387962502]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 564.0
+offset_right = 1166.0
+offset_bottom = 647.0
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 35
+theme_override_styles/fill = SubResource("StyleBoxFlat_4kfk2")
